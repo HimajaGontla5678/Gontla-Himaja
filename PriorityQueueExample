@@ -1,0 +1,20 @@
+import java.util.PriorityQueue;
+
+public class PriorityQueueExample {
+    public static void main(String[] args) {
+        // Create a priority queue (min-heap by default)
+        PriorityQueue<Integer> pq = new PriorityQueue<>();
+
+        // Add elements
+        pq.add(30);
+        pq.add(10);
+        pq.add(20);
+        pq.add(15);
+
+        // Print elements in priority order
+        System.out.println("Priority Queue elements (min-heap order):");
+        while (!pq.isEmpty()) {
+            System.out.println(pq.poll()); // Retrieves and removes the head
+        }
+    }
+}
